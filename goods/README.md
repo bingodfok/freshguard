@@ -1,0 +1,1 @@
+# Fridge-Recorder 物品领域模块

@@ -1,0 +1,1 @@
+# Fridge-Recorder 系统基础领域模块
