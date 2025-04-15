@@ -1,4 +1,4 @@
-package fridge
+package main
 
 // 冰箱相关管理
 

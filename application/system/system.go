@@ -1,4 +1,4 @@
-package system
+package main
 
 // 系统基础管理
 
