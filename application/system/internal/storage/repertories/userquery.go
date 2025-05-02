@@ -46,3 +46,11 @@ func (query *UserQuery) GetUserDetail(user *entity.User) *entity.User {
 	}
 	return nil
 }
+
+func (query *UserQuery) UpdateUserById(user *entity.User) bool {
+	update, err := query.db.ID(user.Base.Id).Update(user)
+	if err != nil || !(update > 0) {
+		return false
+	}
+	return true
+}
