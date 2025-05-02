@@ -5,6 +5,7 @@ go 1.24.0
 require (
 	github.com/go-sql-driver/mysql v1.7.0
 	github.com/spf13/viper v1.20.1
+	golang.org/x/net v0.33.0
 	xorm.io/xorm v1.3.9
 )
 
