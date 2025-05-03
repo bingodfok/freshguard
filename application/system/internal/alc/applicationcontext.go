@@ -27,6 +27,12 @@ func NewApplicationContext() (*ApplicationContext, error) {
 		fmt.Printf("config file unmarshal fail,err:%v\n", err)
 		return nil, err
 	}
+	// 注册dubbo服务
+	registry := NewServiceRegistry(baseConfig.AppName, &baseConfig.Nacos)
+	err := registry.RegisterService()
+	if err != nil {
+		return nil, err
+	}
 	// 连接MySQL
 	var db *xorm.Engine
 	mysqlConfig := baseConfig.Mysql

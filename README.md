@@ -6,3 +6,9 @@
 - ElasticSearch [elastic-search](https://www.elastic.co/cn/elasticsearch)
 ## 基础功能支持
  - Auth [go-auth](https://github.com/bingodfok/go_auth)
+
+## Docker镜像打包
+```shell
+    # 
+    docker build -t bingodfok/resources:v0.0.1 -f ./application/resources/Dockerfile .
+```

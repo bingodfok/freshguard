@@ -1,0 +1,24 @@
+app_name: freshguard-resources
+web:
+  port: 8082
+mysql:
+  host: 192.168.0.122
+  port: 3306
+  username: root
+  password: cfy39177
+  database: freshguard
+  show_sql: true
+nacos:
+  host: 192.168.0.122
+  port: 8848
+  namespace: dev
+  group_id: freshguard
+  username: nacos
+  password: cfy39177
+qiniu:
+  access_key: WZJluIkS1mcpI5KnJwXvih3ZIN5UPF05jHz6sBIJ
+  secret_key: S7LVyjOj8E-g2oNQrb6aCRaieQ6oP4gwPK29so5f
+  public_bucket: go-project
+  private_bucket: go-project-private
+  domain_url: https://file.darrenyou.cn
+

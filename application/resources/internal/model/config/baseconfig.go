@@ -7,5 +7,6 @@ type BaseConfig struct {
 	Mysql   config.MysqlConfig `yaml:"mysql" mapstructure:"mysql"`
 	Redis   config.RedisConfig `yaml:"redis" mapstructure:"redis"`
 	Nacos   config.NacosConfig `yaml:"nacos" mapstructure:"nacos"`
+	Qiniu   QiniuConfig        `yaml:"qiniu" mapstructure:"qiniu"`
 	Web     config.WebConfig   `yaml:"web" mapstructure:"web"`
 }

@@ -1,12 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"github.com/bingodfok/freshguard/application/system/internal/alc"
+)
 
 // 系统基础管理
 
 func main() {
-
-	str := "17778585743"
-	fmt.Println("User_" + str[len(str)-6:])
-
+	_, err := alc.NewApplicationContext()
+	if err != nil {
+		panic(err)
+	}
 }
