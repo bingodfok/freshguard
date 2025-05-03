@@ -19,8 +19,11 @@ FROM alpine:latest
 WORKDIR /app
 
 COPY --from=builder /builds/freshguard_resources .
-COPY --from=builder /builds/etc ./etc
+COPY --from=builder /builds/etc ./application/resources/etc
 
 EXPOSE 8082
+
+RUN apk add dumb-init
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
 CMD ["./freshguard_resources"]
